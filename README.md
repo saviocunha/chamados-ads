@@ -1,6 +1,8 @@
 # Chamados ADS
 
-Sistema de gerenciamento de chamados desenvolvido na disciplina de **Programação para a Web** (curso de Análise e Desenvolvimento de Sistemas — UFCA), sob orientação do Prof. Dr. Jayr Alencar Pereira.
+
+## Objetivo 
+Criar a estrutura inicial de uma API de chamados de suporte com Flask. Atividade desenvolvida na disciplina de **Programação para a Web** (curso de Análise e Desenvolvimento de Sistemas — UFCA), sob orientação do Prof. Dr. Jayr Alencar Pereira.
 
 ## Aluno
 
@@ -42,7 +44,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Instale as dependências:
 
 ```bash
-uv sync
+uv sync --lock
 ```
 
 Rode o projeto:
@@ -63,7 +65,7 @@ Por enquanto só existe uma:
 
 | Método | Rota | Retorno |
 | --- | --- | --- |
-| GET | `/` | `{"mensagem": "API funcionando!"}` |
+| GET | `/` | `{"mensagem": "API em funcinamento"}` |
 
 
 ## Licença
