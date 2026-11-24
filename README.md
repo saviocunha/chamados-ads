@@ -44,13 +44,21 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Instale as dependências:
 
 ```bash
-uv sync --lock
+uv sync --locked
 ```
 
-Rode o projeto:
+Rode a aplicação
+
+Localmente:
 
 ```bash
 uv run flask --app app run
+```
+
+No Codespaces:
+
+```bash
+uv run flask --app app run --host=0.0.0.0 --port=5000
 ```
 
 Aí é só abrir **http://127.0.0.1:5000** no navegador.
@@ -65,8 +73,24 @@ Por enquanto só existe uma:
 
 | Método | Rota | Retorno |
 | --- | --- | --- |
-| GET | `/` | `{"mensagem": "API em funcinamento"}` |
+| GET | `/` | `{"mensagem": "API de chamados em funcinamento"}` |
 
+A resposta deve ter status **200** e o cabeçalho `Content-Type: application/json`.
+
+### Testando pelo terminal
+
+```bash
+curl -i http://localhost:5000/
+```
+
+Saída esperada (resumida):
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"mensagem":"API de chamados em funcionamento"}
+```
 
 ## Licença
 
