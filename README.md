@@ -73,7 +73,7 @@ Por enquanto só existe uma:
 
 | Método | Rota | Retorno |
 | --- | --- | --- |
-| GET | `/` | `{"mensagem": "API de chamados em funcinamento"}` |
+| GET | `/` | `{"mensagem": "API de chamados em funcionamento"}` |
 
 A resposta deve ter status **200** e o cabeçalho `Content-Type: application/json`.
 
